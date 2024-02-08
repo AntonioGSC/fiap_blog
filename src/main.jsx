@@ -13,6 +13,10 @@ const router = createBrowserRouter([
         element: <Home />
     },
     {
+        path: '*',
+        element: <Home />
+    },
+    {
         path: '/post/:slug',
         element: <Post />
     },

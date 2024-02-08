@@ -39,17 +39,15 @@ const Home = () => {
 
                             {posts.map((post) => {
                                 return (
-                                    <Link
-                                        style={{ textDecoration: 'none' }}
-                                        to={`/post/${post.fields.postSlug}`}
-                                        key={post.sys.id}>
-                                        <div className="card mb-3">
-                                            <div className="card-body">
-                                                <h5 className="card-title">{post.fields.postTitle}</h5>
-                                                <p className="card-text">{post.fields.postDescription}</p>
-                                            </div>
+                                    <div className="card mb-3" key={post.sys.id}>
+                                        <div className="card-body">
+                                            <h5 className="card-title">{post.fields.postTitle}</h5>
+                                            <p className="card-text">{post.fields.postDescription}</p>
+                                            <Link to={`/post/${post.fields.postSlug}`} className="card-link">
+                                                Ver post
+                                            </Link>
                                         </div>
-                                    </Link>
+                                    </div>
                                 );
                             })}
 
