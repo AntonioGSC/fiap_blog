@@ -41,7 +41,7 @@ const Home = () => {
                                 return (
                                     <Link
                                         style={{ textDecoration: 'none' }}
-                                        to={post.fields.postSlug}
+                                        to={`/post/${post.fields.postSlug}`}
                                         key={post.sys.id}>
                                         <div className="card mb-3">
                                             <div className="card-body">

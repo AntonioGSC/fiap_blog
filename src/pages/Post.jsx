@@ -3,6 +3,7 @@ import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import Layout from '../components/Layout'
 import { client } from '../lib/createClient';
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Post = () => {
     const [post, setPost] = useState(null);
@@ -31,9 +32,9 @@ const Post = () => {
                         <div dangerouslySetInnerHTML={{ __html: documentToHtmlString(post.fields.postBody) }}></div>
 
                         <div className="mt-1">
-                            <a href="#" className="btn btn-primary">
+                            <Link to="/" className="btn btn-primary">
                                 Voltar para Home
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
