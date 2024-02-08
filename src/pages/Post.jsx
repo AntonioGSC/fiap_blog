@@ -2,16 +2,16 @@ import { useEffect, useState } from 'react';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import Layout from '../components/Layout'
 import { client } from '../lib/createClient';
-
-const POST_SLUG = 'nosso-primeiro-post';
+import { useParams } from "react-router-dom";
 
 const Post = () => {
     const [post, setPost] = useState(null);
+    const { slug } = useParams();
 
     useEffect(() => {
         client
             .getEntries({
-                "fields.postSlug": POST_SLUG,
+                "fields.postSlug": slug,
                 content_type: 'blogPost',
             })
             .then((entries) => {
