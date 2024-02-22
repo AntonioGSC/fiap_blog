@@ -69,7 +69,7 @@ const PostList = () => {
                 <div className="container">
                     <div className="row">
                         <main className="col-md-8">
-                            <h1 className="my-3">Últimos posts</h1>
+                            <h1 className="my-3">Todos os posts</h1>
 
                             {posts.map((post) => {
                                 return (
