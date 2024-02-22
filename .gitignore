@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 constants.js
+
+.env
