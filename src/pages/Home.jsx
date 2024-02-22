@@ -52,7 +52,7 @@ const Home = () => {
                             })}
 
                             <Link to={`/posts`} className="btn btn-primary">
-                                Ver todos os post
+                                Ver todos os posts
                             </Link>
                         </main>
 
