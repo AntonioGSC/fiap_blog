@@ -110,7 +110,9 @@ const PostList = () => {
                                 </div>
                             </div>
 
-                            <a href="/" className='btn btn-primary'>Voltar Para Home</a>
+                            <Link to={`/`} className="btn btn-primary">
+                                Voltar Para Home
+                            </Link>
                         </main>
 
                         <aside className="col-md-4">

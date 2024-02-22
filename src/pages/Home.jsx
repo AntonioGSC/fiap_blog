@@ -51,7 +51,9 @@ const Home = () => {
                                 );
                             })}
 
-                            <a href="/posts" className='btn btn-primary'>Ver todos os posts</a>
+                            <Link to={`/posts`} className="btn btn-primary">
+                                Ver todos os post
+                            </Link>
                         </main>
 
                         <aside className="col-md-4">
