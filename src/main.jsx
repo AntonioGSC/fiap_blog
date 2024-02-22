@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Home from './pages/Home'
 import Post from './pages/Post'
+import PostList from './pages/PostList'
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     {
         path: '/post/:slug',
         element: <Post />
+    },
+    {
+        path: '/posts',
+        element: <PostList />
     },
 ])
 
