@@ -63,6 +63,11 @@ const PostList = () => {
         setSkip((pageNumber - 1) * perPage);
     }
 
+    function changePerPage(e) {
+        setPerPage(parseInt(e.target.value));
+        setSkip(0);
+    }
+
     return (
         <>
             <Layout>
@@ -87,7 +92,7 @@ const PostList = () => {
 
                             <div className='d-flex flex-row justify-content-between'>
                                 <div>
-                                    <select className="form-control" value={perPage} onChange={e => setPerPage(parseInt(e.target.value))}>
+                                    <select className="form-control" value={perPage} onChange={e => changePerPage(e)}>
                                         {Object.entries(perPageOptions).map((c, index) => (
                                             <option key={index} value={c[1]}>{c[0]}</option>
                                         ))}
