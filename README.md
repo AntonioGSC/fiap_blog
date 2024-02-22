@@ -6,7 +6,7 @@
 
 Este é um repositório criado como avaliação final da disciplina de Front-End Engineering e UX, um aplicativo de blog desenvolvido usando React + Vite e integrado com o Contentful para gerenciar o conteúdo. Nele é possível visualizar os 5 últimos posts cadastrados no Contentful, é possível visualizar cada post de maneira independente e acessar uma listagem paginada com todos os posts.
 
-Na tela de listagem geral é possível visualizar todos os posts por meio da paginação e também alterar o número de itens em cada uma das páginas. A paginação é feita a partir do Contentful, ou seja, ele não busca todos os posts de uma só vez e faz a paginação em memória e sim faz uma nova requisição solicitando outros posts utilizando o parâmetro skip, isso resulta em requisições menores e mais velozes, usando menos processamento de ambos os lados.
+Na tela de listagem geral, é possível visualizar todos os posts através da paginação e também ajustar o número de itens em cada página. A paginação é realizada através do Contentful. Em vez de buscar todos os posts de uma vez e paginá-los em memória, o sistema envia novas requisições, solicitando outros posts utilizando o parâmetro "skip". Esse método resulta em requisições menores e mais rápidas, exigindo menos processamento de ambos os lados.
 
 ## 🛠️ Construído utilizando
 
